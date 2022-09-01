@@ -4,41 +4,53 @@ A Simple ToDo App is built using the MVC Architecture, we have also implemented 
 
 ---
 
-> Be sure to add that lovely star 😀 and fork it for your own copy
+[![License: MIT](https://img.shields.io/badge/License-MIT-important.svg)](https://opensource.org/licenses/MIT)
 
----
+Description goes here...
 
-# Objectives
+## Demo
 
-- It's a beginner level app created to understand how MVC concept and logins are added
+[Live version on Heroku]()
 
----
 
-# Who is this for? 
 
-- It's for beginners & intermediates with little more experience, to help understand the various aspects of building a node app with some complex features
+## Getting Started
 
----
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-# Packages/Dependencies used 
+**Note**: Please make sure you have all the prerequisites program listed installed on your local machine.
 
-bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, validator
+### Prerequisites
 
----
+- Node.js
+- Npm
 
-# Install all the dependencies or node packages used for development via Terminal
+### Installing
 
-`npm install` 
+1. Fork this repository on Github.
+1. Clone your forked repository onto your local computer.
+1. Use `$ cd mvc-project-night` to move into the project directory.
+1. Use `$ npm install` to install the required depency.
+1. Use `$ npm start` to start a local server on your machine.
+1. Open your browser and go to `http://localhost:2121/` to view the server.
+1. Explore and enjoy!
 
----
+### Contributing
 
-# Things to add
+1. Use `$ git checkout -b beta` to create and move to beta branch.
+1. Use `$ git branch` to make sure that you are on beta branch before making any new features/changes.
+1. After commiting any new features/changes locally; Use `$ git push -u origin beta` to push the changes to your forked respository.
+1. To contribute back to the main repository, you will have to create a new [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+1. Happy Coding!
 
-- Create a `.env` file and add the following as `key: value` 
-  - PORT: 2121 (can be any port example: 3000) 
-  - DB_STRING: `your database URI` 
- ---
- 
- Have fun testing and improving it! 😎
+## Built with
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- NodeJs
+- Express
+- MongoDB
+
 
 
