@@ -56,3 +56,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 
+
+## Ideas
+
+- Gym Login as premise
+- System for storing and saving peoples information. 
+- Database interactabiltiy 
+- User gets page from exercise experience
+- Page has individualized notes and data they entered
+
+
+## Execution
+
+- Main views page will be signup/login
+- Signup/login process will be auth process
+- Leads them then to their personalized page.
+- Root page with links to login and signup which will be auth process.
+- 
