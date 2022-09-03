@@ -10,6 +10,7 @@
 <body>
     <h1>Todos</h1>
     <ul>
+        <!--This loop is what will iterate over the items in the database.-->
     <% todos.forEach( el => { %>
             <li class='todoItem' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
