@@ -32,6 +32,11 @@ These instructions will get you a copy of the project up and running on your loc
 1. Use `$ cd mvc-project-night` to move into the project directory.
 1. Use `$ npm install` to install the required depency.
 1. Use `$ npm start` to start a local server on your machine.
+1. Create a .env file in the config folder.
+1. Inside of the .env file create a variable called PORT and set it equal to 2121.
+1. Still inside of the .env file, create another variable called DB_STRING and set it equal to mongodb+srv://demo:demo@cluster0.oonqzar.mongodb.net/?retryWrites=true&w=majority.
+1. Now, create a .gitignore in the main folder location. 
+1. Inside of this .gitignore add node_modules, in order to avoid the crazy file upload, and add the .env file in order to protect those variables.
 1. Open your browser and go to `http://localhost:2121/` to view the server.
 1. Explore and enjoy!
 
@@ -56,3 +61,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 
+
+## Ideas
+
+- Gym Login as premise
+- System for storing and saving peoples information. 
+- Database interactabiltiy 
+- User gets page from exercise experience
+- Page has individualized notes and data they entered
+
+
+## Execution
+
+- Main views page will be signup/login
+- Signup/login process will be auth process
+- Leads them then to their personalized page.
+- Root page with links to login and signup which will be auth process.
+- 
