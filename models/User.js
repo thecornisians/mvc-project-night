@@ -7,7 +7,6 @@ const UserSchema = new mongoose.Schema({
   expLevel: { type: String, unique: false },
   startingWeight: { type: Number },
   age: { type: Number },
-  gender: {tpye: Array, possibleValues: ['male', 'female', 'noPreference']},
   password: String
 })
 

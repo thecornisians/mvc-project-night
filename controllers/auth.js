@@ -74,7 +74,6 @@ const User = require('../models/User')
       expLevel: req.body.expLevel,
       startingWeight: req.body.startingWeight,
       age: req.body.age,
-      gender: req.body.gender,
       password: req.body.password
     })
   
