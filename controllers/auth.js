@@ -73,6 +73,8 @@ const User = require('../models/User')
       email: req.body.email,
       expLevel: req.body.expLevel,
       startingWeight: req.body.startingWeight,
+      age: req.body.age,
+      gender: req.body.gender,
       password: req.body.password
     })
   

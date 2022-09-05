@@ -5,7 +5,9 @@ const UserSchema = new mongoose.Schema({
   userName: { type: String, unique: true },
   email: { type: String, unique: true },
   expLevel: { type: String, unique: false },
-  startingWeight: {type: String, unique: false},
+  startingWeight: { type: Number },
+  age: { type: Number },
+  gender: {tpye: Array, possibleValues: ['male', 'female', 'noPreference']},
   password: String
 })
 
