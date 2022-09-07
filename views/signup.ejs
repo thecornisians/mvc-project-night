@@ -5,41 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link  href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link  href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<body>
+<body> 
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-dark text-light mb-5">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
     <% if (locals.messages.errors) { %>
         <% messages.errors.forEach( el => { %>
             <div class="alert alert-danger"><%= el.msg %></div>
         <% }) %>    
     <% } %>
-    <!--<form action="/signup" method="POST">
+
+    <!-- <form action="/signup" method="POST">
         <input type="text" name="userName" placeholder="User Name">
         <input type="email" name="email" placeholder="Email">
-        <input type="text" name="expLevel" placeholder="Experience Level">
-        <input type="number" name="startingWeight" placeholder="Enter Starting Weight" value="160">
-        <input type="number" name="age" placeholder="Enter Age" value="25">
         <input type="password" name="password" placeholder="Password">
         <input type="password" name="confirmPassword" placeholder="Confirm Password">
         <input type="submit">
-    </form>-->
+    </form> -->
+     <!-- Form field -->
+    <div class="d-flex vh-100 justify-content-center hero-section">
+        <div class="container row g-0 mx-auto">
+            <form action="/signup" method="POST" class="row container py-4 form-group col-md-8 mx-5">
+                <div class="mb-3 col-xs-4">
+                    <label for="name" class="form-label">Full Name: </label>
+                    <input  class="form-control " type="text" name="userName" placeholder="Full Name">
+                </div>
+        
+                <div class="mb-3 col-xs-4">
+                    <label for="DOB" class="form-label">Age: </label>
+                    <input  class="form-control" type="number" name="age" placeholder="Enter Age" value="">
+                </div>
+        
+                <div class="mb-3 col-xs-4">
+                    <label for="email" class="form-label">Email: </label>
+                    <input  class="form-control" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="mb-3 col-xs-4">
+                    <label for="startingWeight" class="form-label">Weight:</label> 
+                    <input  class="form-control" type="number" name="startingWeight" placeholder="Starting Weight">
+                </div>
+                <div class="mb-3 col-xs-4">
+                    <label for="weighIn" class="form-label">Weigh In:</label>
+                    <input  class="form-control" type="number" name="weighIn" placeholder="Weigh In">
+                </div>
+                
+                <div class="mb-3 col-xs-4">
+                    <label for="height" class="form-label">Height:</label>
+                    <input  class="form-control" type="number" name="height" placeholder="Height">
+                </div>
+              
+                <div class="mb-3 col-xs-4">
+                     <label for="password" class="form-label">Password</label>
+                     <input  class="form-control mb-3" type="password" name="password" placeholder="Password">
+                 </div>
+                <div class="mb-3 col-xs-4">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input  class="form-control mb-3" type="password" name="confirmPassword" placeholder="Confirm Password">
+                </div>
 
-    <form action="/signup" method="post">
-        <p>Full Name:</p>
-        <input type="text" name="userName" placeholder="Full Name">
-        <p>Date of Birth:</p>
-        <input type="number" name="age" placeholder="Enter Age" value="25">
-        <p>Email:</p>
-        <input type="email" name="email" placeholder="Email">
-        <p>Sarting Weight:</p> 
-        <input type="number" name="startingWeight" placeholder="Starting Weight">
-        <p>Weigh In</p>
-        <input type="number" name="weighIn" placeholder="Weigh In">
-        <p>Height:</p>
-        <input type="number" name="height" placeholder="Height">
-        <input type="password" name="password" placeholder="Password">
-        <input type="password" name="confirmPassword" placeholder="Confirm Password">
-        <button type="submit">SUBMIT</button>
-    </form>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <!-- Hero image -->
+        <div class="container py-5 h-60">
+            <img src="../images/hero2.jpg" alt="" class="img-fluid" style="border-radius: 1rem 0 0 1rem;">
+        </div>
+    </div>
+    
 </body>
 </html>
