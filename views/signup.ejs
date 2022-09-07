@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
+    <link  href="stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <% if (locals.messages.errors) { %>
@@ -12,7 +13,7 @@
             <div class="alert alert-danger"><%= el.msg %></div>
         <% }) %>    
     <% } %>
-    <form action="/signup" method="POST">
+    <!--<form action="/signup" method="POST">
         <input type="text" name="userName" placeholder="User Name">
         <input type="email" name="email" placeholder="Email">
         <input type="text" name="expLevel" placeholder="Experience Level">
@@ -21,6 +22,24 @@
         <input type="password" name="password" placeholder="Password">
         <input type="password" name="confirmPassword" placeholder="Confirm Password">
         <input type="submit">
+    </form>-->
+
+    <form action="/signup" method="post">
+        <p>Full Name:</p>
+        <input type="text" name="userName" placeholder="Full Name">
+        <p>Date of Birth:</p>
+        <input type="number" name="age" placeholder="Enter Age" value="25">
+        <p>Email:</p>
+        <input type="email" name="email" placeholder="Email">
+        <p>Sarting Weight:</p> 
+        <input type="number" name="startingWeight" placeholder="Starting Weight">
+        <p>Weigh In</p>
+        <input type="number" name="weighIn" placeholder="Weigh In">
+        <p>Height:</p>
+        <input type="number" name="height" placeholder="Height">
+        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="confirmPassword" placeholder="Confirm Password">
+        <button type="submit">SUBMIT</button>
     </form>
 </body>
 </html>
