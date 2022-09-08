@@ -34,7 +34,6 @@ These instructions will get you a copy of the project up and running on your loc
 1. Use `$ npm start` to start a local server on your machine.
 1. Create a .env file in the config folder.
 1. Inside of the .env file create a variable called PORT and set it equal to 2121.
-1. Still inside of the .env file, create another variable called DB_STRING and set it equal to mongodb+srv://demo:demo@cluster0.oonqzar.mongodb.net/?retryWrites=true&w=majority.
 1. Now, create a .gitignore in the main folder location. 
 1. Inside of this .gitignore add node_modules, in order to avoid the crazy file upload, and add the .env file in order to protect those variables.
 1. Open your browser and go to `http://localhost:2121/` to view the server.
